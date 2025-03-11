@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 8px 4px 10px 10px;
     background: transparent;
     color: white;
     position: relative;
@@ -38,7 +38,7 @@
     position: absolute;
     bottom: 14px;
     right: 0px;
-    border: 2px solid black;
+    border: 2px solid rgba(60, 60, 60, 0.831);
     
     /* Blinking Effect */
     animation: blink 1s infinite;

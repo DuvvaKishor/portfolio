@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useNavigate } from "react-router-dom";
 import { faGithub, faInstagram, faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./Home.css";
 
 const Home = ({ menuOpen }) => {
   const [showResume, setShowResume] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <div className={`home-container ${menuOpen ? "dimmed" : ""}`}>
@@ -21,7 +23,7 @@ const Home = ({ menuOpen }) => {
 
       {/* Buttons */}
       <div className="button-container">
-        <a href="#contact" className="cta-button hire-me">Hire Me</a>
+        <a href="#contact" onClick={() => navigate("/contact")} className="cta-button hire-me">Hire Me</a>
 
         {/* Resume Dropdown */}
         <div className="resume-dropdown">
@@ -33,7 +35,7 @@ const Home = ({ menuOpen }) => {
           {showResume && (
             <div className="resume-preview">
               <h3>My Resume (Click to Open)</h3>
-              <a href="/assets/KishorDuvvaResume.pdf" target="_blank">
+              <a href={`${process.env.PUBLIC_URL}/assets/KishorDuvvaResume.pdf`} >
                 <img className="resume-img" src={`${process.env.PUBLIC_URL}/assets/KishorDuvvaResume.jpg`}  alt="Resume Preview" />
               </a>
             </div>
