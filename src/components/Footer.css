@@ -1,0 +1,22 @@
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 8px;
+    background: transparent;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-weight: 700;
+  }
+
+
+  footer:hover {
+    background: linear-gradient(to right, #ff4081, #8e44ad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ 
+  }
+  
+  

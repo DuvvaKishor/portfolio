@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-image: url('/public/assets/large-bg.jpg'); /* Replace with your large screen image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+}
+
+/* Background for Small Screens */
+@media (max-width: 768px) {
+  body {
+    background-image: url('/public/assets/small-bg.jpg'); /* Replace with your small screen image */
+  }
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+

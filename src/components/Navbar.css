@@ -1,0 +1,118 @@
+/* Navbar container */
+.user-details {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.my-name {
+  padding: 0 0 0 12px;
+  font-family: Cursive;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: transparent;
+    color: white;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .logo {
+    width: 46px; /* Adjust size as needed */
+    height: 46px;
+    border-radius: 50%; /* Makes the logo circular */
+    /* border: 2px solid white; */
+  }
+  
+  .status-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 14px;
+    right: 0px;
+    border: 2px solid black;
+    
+    /* Blinking Effect */
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  
+  /* Navigation links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Hamburger Menu Button */
+  .menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Responsive for mobile */
+  @media screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: transparent;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    .nav-links.open {
+      display: flex;
+      background: rgba(0, 0, 0, 0.8); /* Light Black Background */
+      margin: 30px;
+      border-radius: 12px;
+    }
+  
+    .nav-links li {
+      padding: 10px 0;
+    }
+  }
+  
