@@ -34,7 +34,7 @@ const Home = ({ menuOpen }) => {
             <div className="resume-preview">
               <h3>My Resume (Click to Open)</h3>
               <a href="/assets/KishorDuvvaResume.pdf" target="_blank">
-                <img className="resume-img" src="/assets/KishorDuvvaResume.jpg" alt="Resume Preview" />
+                <img className="resume-img" src={`${process.env.PUBLIC_URL}/assets/KishorDuvvaResume.jpg`}  alt="Resume Preview" />
               </a>
             </div>
           )}

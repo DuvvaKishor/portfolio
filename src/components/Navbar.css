@@ -1,24 +1,21 @@
 /* Navbar container */
-.user-details {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.my-name {
-  padding: 0 0 0 12px;
-  font-family: Cursive;
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 10px;
     background: transparent;
     color: white;
     position: relative;
     z-index: 1000;
+    /* border: 2px solid blue; */
   }
+
+  .user-details {
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 2px solid blue; */
+}
   
   .logo-container {
     display: flex;
@@ -47,6 +44,12 @@
     animation: blink 1s infinite;
   }
   
+  .my-name {
+    padding: 0 0 0 12px;
+    font-family: Cursive;
+  }
+
+
   @keyframes blink {
     0% { opacity: 1; }
     50% { opacity: 0; }
