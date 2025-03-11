@@ -8,7 +8,7 @@ const Navbar = ({ setMenuOpen, menuOpen }) => {
     <nav className="navbar">
       <div className="user-details">
         <div className="logo-container">
-          <img className="logo" alt="D" src="assets/duvvaphoto.jpg" />
+          <img className="logo" alt="D" src={`${process.env.PUBLIC_URL}/assets/duvvaphoto.jpg`} />
           <span className="status-indicator"></span>
         </div>
         <h1 className="my-name" onClick={() => navigate("/")}>Kishor Duvva</h1>

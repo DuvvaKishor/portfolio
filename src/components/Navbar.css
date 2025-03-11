@@ -107,8 +107,8 @@
     .nav-links.open {
       display: flex;
       background: rgba(0, 0, 0, 0.8); /* Light Black Background */
-      margin: 30px;
-      border-radius: 12px;
+      /* margin: 30px; */
+      border-radius: 20px;
     }
   
     .nav-links li {

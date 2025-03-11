@@ -48,7 +48,7 @@ function About() {
         
         </div>
       <div className="about-image-container">
-            <img src="assets/image.jpg" alt="Developer Working" className="about-image" />
+            <img src="../assets/image.jpg" alt="Developer Working" className="about-image" />
       </div>
 </div>
     </section>
