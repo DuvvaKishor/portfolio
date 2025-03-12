@@ -60,7 +60,6 @@ body {
     border-radius: 2px solid white;
     width: 90%;
     line-height: 1.8;
-
   }
   
   .desc-highlight {
@@ -136,12 +135,13 @@ body {
     color: white;
     position: relative;
     margin: 0;
+    padding-left: 6px;
   }
 
   .styled-heading::before {
     content: "";
     position: absolute;
-    width: 172px;
+    width: 184px;
     height: 30%;
     background: #ff80ab; /* Light pink underlining effect */
     bottom: 0;
@@ -161,8 +161,8 @@ body {
   .cta-button {
     background: linear-gradient(to right, #ff4081, #8e44ad);
     color: white;
-    padding: 7px 14px;
-    font-size: 10px;
+    /* padding: 7px 14px; */
+    font-size: 8px;
     /* font-weight: bold; */
     text-decoration: none;
     border-radius: 20px;

@@ -28,7 +28,7 @@ const Home = ({ menuOpen }) => {
         {/* Resume Dropdown */}
         <div className="resume-dropdown">
           <button className="cta-button" onClick={() => setShowResume(!showResume)}>
-            My Resume <span className={`dropdown-icon ${showResume ? "rotate" : ""}`}>&#9660;</span>
+          Resume <span className={`dropdown-icon ${showResume ? "rotate" : ""}`}>&#9660;</span>
           </button>
           
           {/* Resume Preview */}
