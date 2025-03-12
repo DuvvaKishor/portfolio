@@ -19,7 +19,7 @@ function About() {
     <section className="about-container">
       <div className="about-content">
       <div className="about-flex">
-        <h1 className="about-title">About <span className="highlight">Me</span></h1>
+        <h1 className="about-title"> About <span className="highlight">Me</span></h1>
         <h2 className="about-myname">Hello! My name is <span className="myname">Kishor Duvva</span></h2>
         <p className="about-text">
         I am a self-taught programmer with a passion for learning and exploring new technologies. I have a strong background in 
